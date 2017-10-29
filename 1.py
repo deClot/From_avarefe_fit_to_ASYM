@@ -1,7 +1,16 @@
-file = open('Result_avarege of fit_n.txt', 'r')
-file2 = open('Res_Asym', 'w')
+import os
 
-v = input('Number of state')
+ini_path = os.path.abspath('Result_avarege of fit_n.txt')
+res_path = os.path.abspath('Res_Asym')
+
+if os.path.exists(ini_path)==False:
+    ini_path = os.path.abspath('From_avarege_fit_to_ASYM/Result_avarege of fit_n.txt')
+    res_path = os.path.abspath('From_avarege_fit_to_ASYM/Res_Asym.txt')
+
+file = open(ini_path, 'r')
+file2 = open(res_path, 'w')
+
+v = input('Number of state ')
 
 while(True):
     str1 = file.readline()
