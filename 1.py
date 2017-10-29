@@ -5,7 +5,7 @@ res_path = os.path.abspath('Res_Asym')
 
 if os.path.exists(ini_path)==False:
     ini_path = os.path.abspath('From_avarege_fit_to_ASYM/Result_avarege of fit_n.txt')
-    res_path = os.path.abspath('From_avarege_fit_to_ASYM/Res_Asym.txt')
+    res_path = os.path.abspath('From_avarege_fit_to_ASYM/Res_Asym')
 
 file = open(ini_path, 'r')
 file2 = open(res_path, 'w')
